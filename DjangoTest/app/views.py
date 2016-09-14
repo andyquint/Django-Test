@@ -40,7 +40,8 @@ def about(request):
         'app/about.html',
         {
             'title':'About',
-            'message':'Your application description page.',
+            'message':'My first Django application, yay!',
+            'datetime':datetime.now().strftime("%B %d, %Y"),
             'year':datetime.now().year,
         }
     )
